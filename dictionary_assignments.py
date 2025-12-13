@@ -1,4 +1,4 @@
-igbo_dict = {
+igbo_dict = {  #by Chiemelie D. Nwosu
     'morning': 'ututu',
     'fowl': 'okuko',
     'head': 'isi',
@@ -21,4 +21,5 @@ igbo_dict = {
     'Thanks': 'daalu'
 }
 key = input('What English word do you want to translate to igbo? ')
+
 print(key + ' ' + ' ' 'is' + ' ' + ' ' + igbo_dict[key] + ' ' + ' ' + 'in  Igbo')
