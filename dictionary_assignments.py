@@ -1,4 +1,5 @@
-igbo_dict = {  #by Chiemelie D. Nwosu
+languages = {
+    "igbo" : {  #by Chiemelie D. Nwosu
     'morning': 'ututu',
     'fowl': 'okuko',
     'head': 'isi',
@@ -19,12 +20,44 @@ igbo_dict = {  #by Chiemelie D. Nwosu
     'animal': 'anumanu',
     'child': 'nwatakili',
     'thanks': 'daalu'
+     },
+    "igala": { #by Adaji Shalom Unekuojo
+        'morning': 'ojale',
+        'fowl': 'ẹnyẹ',
+        'head': 'oju',
+        'university': 'ile-ẹkọ giga',
+        'book': 'iwe',
+        'phone': 'tẹlifoonu',
+        'teacher': 'ọkọ́ni',
+        'car': 'moto',
+        'god': 'Ojochamachala',
+        'dog': 'aja',
+        'fish': 'ẹja',
+        'hand': 'owo',
+        'leg': 'ẹsẹ',
+        'prayer': 'adura',
+        'food': 'ounjẹ',
+        'cloth': 'aso',
+        'family': 'ebi',
+        'animal': 'ẹranko',
+        'child': 'ọmọ',
+        'thanks': 'oche'
+    }
 }
-key = input('what do you want to tranlate? ').lower()
-if key in igbo_dict:
-    print(igbo_dict[key])
+
+language = input("Choose a language (Igbo or Igala): ").strip().lower()
+
+if language not in languages:
+    print("Sorry, this language is not available.")
 else:
-    print('Sorry, I do not have the translation of this word')
+    word = input("What word do you want to translate? ").strip().lower()
+    translation = languages[language].get(word)
+
+    if translation:
+        print(f"Translation ({language.title()}): {translation}")
+    else:
+        print("Sorry, we do not have the translation of this word.")
+
 
 
 
