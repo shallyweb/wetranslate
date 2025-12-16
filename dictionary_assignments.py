@@ -20,13 +20,10 @@ igbo_dict = {  #by Chiemelie D. Nwosu
     'child': 'nwatakili',
     'Thanks': 'daalu'
 }
-def translate(word):
-    word = word.lower()
-    if word in igbo_dict:
-        return igbo_dict[word]
-    else:
-        return "Oops! Seems like we do not have the translation of this word"
+key = input('what do you want to tranlate? ').lower()
+if key in igbo_dict:
+    print(igbo_dict[key])
+else:
+    print('Sorry, I do not have the translation of this word')
 
-key = input('What do you want to translate? ')
-print(translate(key))
 
