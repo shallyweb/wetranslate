@@ -1,25 +1,25 @@
 languages = {
     "igbo" : {  #by Chiemelie D. Nwosu
-    'morning': 'ututu',
-    'fowl': 'okuko',
+    'morning': 'ụtụtụ',
+    'fowl': 'ọkụkọ',
     'head': 'isi',
-    'university': 'mahadum',
-    'book': 'akwukwo',
+    'university': 'mahadụm',
+    'book': 'akwụkwọ',
     'phone': 'ekwenti',
     'teacher': 'onye nkuzi',
     'car': 'ugboala',
     'god': 'chukwu',
-    'dog': 'nkita',
-    'fish': 'azu',
-    'hand': 'aka',
-    'leg': 'okpa',
+    'dog': 'nkịta',
+    'fish': 'azụ',
+    'hand': 'áká',
+    'leg': 'ọkpa',
     'prayer': 'ekpele',
-    'food': 'nri',
-    'cloth': 'akwa',
-    'family': 'ezinulo',
+    'food': 'nrị',
+    'cloth': 'ákwà',
+    'family': 'ezinụlọ',
     'animal': 'anumanu',
     'child': 'nwatakili',
-    'thanks': 'daalu'
+    'thanks': 'daalụ'
      },
     "igala": { #by Adaji Shalom Unekuojo
         'morning': 'ojale',
@@ -57,6 +57,7 @@ else:
         print(f"Translation ({language.title()}): {translation}")
     else:
         print("Sorry, we do not have the translation of this word.")
+
 
 
 
