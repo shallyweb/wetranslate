@@ -20,6 +20,13 @@ igbo_dict = {  #by Chiemelie D. Nwosu
     'child': 'nwatakili',
     'Thanks': 'daalu'
 }
-key = input('What English word do you want to translate to igbo? ')
+def translate(word):
+    word = word.lower()
+    if word in igbo_dict:
+        return igbo_dict[word]
+    else:
+        return "Oops! Seems like we do not have the translation of this word"
 
-print(key + ' ' + ' ' 'is' + ' ' + ' ' + igbo_dict[key] + ' ' + ' ' + 'in  Igbo')
+key = input('What do you want to translate? ')
+print(translate(key))
+
