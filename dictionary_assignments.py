@@ -7,7 +7,7 @@ igbo_dict = {  #by Chiemelie D. Nwosu
     'phone': 'ekwenti',
     'teacher': 'onye nkuzi',
     'car': 'ugboala',
-    'God': 'chukwu',
+    'god': 'chukwu',
     'dog': 'nkita',
     'fish': 'azu',
     'hand': 'aka',
@@ -18,12 +18,13 @@ igbo_dict = {  #by Chiemelie D. Nwosu
     'family': 'ezinulo',
     'animal': 'anumanu',
     'child': 'nwatakili',
-    'Thanks': 'daalu'
+    'thanks': 'daalu'
 }
 key = input('what do you want to tranlate? ').lower()
 if key in igbo_dict:
     print(igbo_dict[key])
 else:
     print('Sorry, I do not have the translation of this word')
+
 
 
