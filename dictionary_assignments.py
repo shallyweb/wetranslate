@@ -28,7 +28,7 @@ languages = {
         'university': 'ile-ẹkọ giga',
         'book': 'iwe',
         'phone': 'tẹlifoonu',
-        'teacher': 'ọkọ́ni',
+        'teacher': 'akuko',
         'car': 'moto',
         'god': 'Ojochamachala',
         'dog': 'aja',
@@ -41,7 +41,7 @@ languages = {
         'family': 'ebi',
         'animal': 'ẹranko',
         'child': 'ọmọ',
-        'thanks': 'oche'
+        'thanks': 'agba'
     }
 }
 
@@ -57,6 +57,7 @@ else:
         print(f"Translation ({language.title()}): {translation}")
     else:
         print("Sorry, we do not have the translation of this word.")
+
 
 
 
