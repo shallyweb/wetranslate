@@ -65,6 +65,28 @@ languages = {
         'head':'ori',
         'leg':'ese',
    },
+ "hausa": { #by Ezeagu Chioma Peace
+     'house': 'gida',
+     'door': 'kofa',
+     'sheep': 'tunkiya',
+     'water': 'ruwa',
+     'meat': 'nama',
+     'stomach': 'ciki',
+     'thank you': 'godiya',
+     'money': 'kudi',
+     'rice': 'shinkafa',
+     'grandfather': 'kaka',
+     'grandmother': 'mama',
+     'child': 'yaro',
+     'husband': 'miji',
+     'wife': 'mata',
+     'watch': 'kallo',
+     'rabbit': 'zumo',
+     'hello': 'sannu',
+     'fis': 'kifi',
+     'rope': 'laya',
+    'goodbye': 'sai an jana'
+},
 }
 
 language = input("Choose a language (Igbo,Igala,Yoruba): ").strip().lower()
@@ -79,6 +101,7 @@ else:
         print(f"Translation ({language.title()}): {translation}")
     else:
         print("Sorry, we do not have the translation of this word.")
+
 
 
 
