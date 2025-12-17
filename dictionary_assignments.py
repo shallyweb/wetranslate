@@ -42,9 +42,31 @@ languages = {
         'animal': 'ẹranko',
         'child': 'ọmọ',
         'thanks': 'agba'
-    }
-}
-
+   },
+"yoruba":{#by Olaniyi Hephzibah Oluwatitomisin
+        'morning': 'Ekaaaro',  
+        'dog':'aja'
+        'wife': 'iyawo'
+        'husband':'oko'
+        'friend':'ore'
+         'man':'okurin'
+        'sorry':'ma binu'
+         'house':'ile'
+         'water':'omi'
+         'food':'ounje'
+         'money':'owo'
+         'day':'ojo'
+          'woman':'obirin'
+           'no':'rara'
+          'yes':'beeni'
+          'please':'jowo'
+         'goodbye':'o dabo'
+         'love':'ife'
+         'head':'ori'
+          'leg':'ese'
+},
+      }
+          }
 language = input("Choose a language (Igbo or Igala): ").strip().lower()
 
 if language not in languages:
@@ -57,6 +79,7 @@ else:
         print(f"Translation ({language.title()}): {translation}")
     else:
         print("Sorry, we do not have the translation of this word.")
+
 
 
 
