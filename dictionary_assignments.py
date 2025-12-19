@@ -22,12 +22,12 @@ languages = {
     'thanks': 'daalụ'
      },
     "igala": { #by Adaji Shalom Unekuojo
-        'morning': 'ojale',
-        'fowl': 'ẹnyẹ',
-        'head': 'oju',
-        'university': 'ile-ẹkọ giga',
-        'book': 'iwe',
-        'phone': 'tẹlifoonu',
+        'morning': 'odudu',
+        'fowl': 'ajuwe',
+        'head': 'oji',
+        'person': 'one',
+        'book': 'otaida',
+        'father': 'atah',
         'teacher': 'akuko',
         'car': 'moto',
         'water': 'omi',
@@ -35,12 +35,12 @@ languages = {
         'fish': 'ẹja',
         'hand': 'owo',
         'leg': 'ẹsẹ',
-        'prayer': 'adura',
+        'prayer': 'aduwa',
         'food': 'ounjẹ',
-        'cloth': 'aso',
-        'family': 'ebi',
+        'cloth': 'ukpo',
+        'siblings': 'omaye',
         'animal': 'ẹranko',
-        'child': 'ọmọ',
+        'child': 'ọma',
         'thanks': 'agba'
     },
    "yoruba": {#by Olaniyi Hephzibah Oluwatitomisin
@@ -101,6 +101,7 @@ else:
         print(f"Translation ({language.title()}): {translation}")
     else:
         print("Sorry, we do not have the translation of this word.")
+
 
 
 
