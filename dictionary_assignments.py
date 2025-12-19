@@ -39,7 +39,7 @@ languages = {
         'food': 'ounjẹ',
         'cloth': 'ukpo',
         'siblings': 'omaye',
-        'animal': 'ẹranko',
+        'house': 'ouni',
         'child': 'ọma',
         'thanks': 'agba'
     },
@@ -101,6 +101,7 @@ else:
         print(f"Translation ({language.title()}): {translation}")
     else:
         print("Sorry, we do not have the translation of this word.")
+
 
 
 
