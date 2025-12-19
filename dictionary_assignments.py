@@ -87,6 +87,7 @@ languages = {
      'rope': 'laya',
     'goodbye': 'sai an jana'
 },
+    heree michelle
 }
 
 language = input("Choose a language (Igbo, Igala, Yoruba, Hausa or): ").strip().lower()
@@ -101,6 +102,7 @@ else:
         print(f"Translation ({language.title()}): {translation}")
     else:
         print("Sorry, we do not have the translation of this word.")
+
 
 
 
