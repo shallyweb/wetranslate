@@ -30,7 +30,7 @@ languages = {
         'phone': 'tẹlifoonu',
         'teacher': 'akuko',
         'car': 'moto',
-        'god': 'Ojochamachala',
+        'water': 'omi',
         'dog': 'aja',
         'fish': 'ẹja',
         'hand': 'owo',
@@ -89,7 +89,7 @@ languages = {
 },
 }
 
-language = input("Choose a language (Igbo,Igala,Yoruba): ").strip().lower()
+language = input("Choose a language (Igbo, Igala, Yoruba, Hausa or): ").strip().lower()
 
 if language not in languages:
     print("Sorry, this language is not available.")
@@ -101,6 +101,7 @@ else:
         print(f"Translation ({language.title()}): {translation}")
     else:
         print("Sorry, we do not have the translation of this word.")
+
 
 
 
