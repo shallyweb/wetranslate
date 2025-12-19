@@ -50,7 +50,7 @@ languages = {
         'husband':'oko',
         'friend':'ore',
         'man':'okurin',
-        'sorry':'ma binu'
+        'sorry':'ma binu',
         'house':'ile',
         'water':'omi',
         'food':'ounje',
@@ -72,7 +72,7 @@ languages = {
      'water': 'ruwa',
      'meat': 'nama',
      'stomach': 'ciki',
-     'thank you': 'godiya',
+     'thanks': 'godiya',
      'money': 'kudi',
      'rice': 'shinkafa',
      'grandfather': 'kaka',
@@ -87,7 +87,7 @@ languages = {
      'rope': 'laya',
     'goodbye': 'sai an jana'
 },
-    "idoma": {by# Okpe 0yigocho Michelle
+    "idoma": {# by Okpe 0yigocho Michelle
   
         'fowl':'ougou',
         'leg': 'igpo',
@@ -104,12 +104,14 @@ languages = {
         'prayer': 'aduwa',
         'food': 'odree',
         'shoe': 'adaba',
-        'siter': 'oine',
+        'sister': 'oine',
         'building': 'ole',
         'glasses': 'odo baye',
-        'bag': 'ekpatii
-        'light':'ola',
-    },vlanguage = input("Choose a language (Igbo, Igala, Yoruba, Hausa or): ").strip().lower()
+        'bag': 'ekpatii',
+        'light':'ola'
+},
+}
+language = input("Choose a language (Igbo, Igala, Yoruba, Hausa or Idoma): ").strip().lower()
 
 if language not in languages:
     print("Sorry, this language is not available.")
@@ -121,6 +123,7 @@ else:
         print(f"Translation ({language.title()}): {translation}")
     else:
         print("Sorry, we do not have the translation of this word.")
+
 
 
 
