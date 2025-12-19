@@ -63,7 +63,7 @@ languages = {
         'goodbye':'o dabo',
         'love':'ife',
         'head':'ori',
-        'leg':'ese',
+        'leg':'ese'
    },
  "hausa": { #by Ezeagu Chioma Peace
      'house': 'gida',
@@ -101,6 +101,7 @@ else:
         print(f"Translation ({language.title()}): {translation}")
     else:
         print("Sorry, we do not have the translation of this word.")
+
 
 
 
