@@ -83,7 +83,7 @@ languages = {
      'watch': 'kallo',
      'rabbit': 'zumo',
      'hello': 'sannu',
-     'fis': 'kifi',
+     'fish': 'kifi',
      'rope': 'laya',
     'goodbye': 'sai an jana'
 },
@@ -101,6 +101,7 @@ else:
         print(f"Translation ({language.title()}): {translation}")
     else:
         print("Sorry, we do not have the translation of this word.")
+
 
 
 
