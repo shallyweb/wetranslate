@@ -1,5 +1,5 @@
 languages = {
-    "igbo" : {  #by Chiemelie D. Nwosu
+    "igbo" : {  #by Chiemelie Daniel Nwosu
     'morning': 'ụtụtụ',
     'fowl': 'ọkụkọ',
     'head': 'isi',
@@ -111,18 +111,36 @@ languages = {
         'light':'ola'
 },
 }
-language = input("Choose a language (Igbo, Igala, Yoruba, Hausa or Idoma): ").strip().lower()
 
-if language not in languages:
-    print("Sorry, this language is not available.")
-else:
-    word = input("What word do you want to translate? ").strip().lower()
-    translation = languages[language].get(word)
+def main():
 
-    if translation:
-        print(f"Translation ({language.title()}): {translation}")
-    else:
-        print("Sorry, we do not have the translation of this word.")
+    language = st.selectbox("Choose a Language:", ["Igbo", "Igala", 'Yoruba', "Hausa", "Idoma"]).lower()
+    st.title("Nigerian Language Translator")
+    st.write(f" Convert from English to {language}")
+
+    word = st.text_input(f" What English word do you want to translate to {language}").strip().lower()
+
+    if st.button("Translate"):
+
+        if language not in languages:
+            st.error("Sorry, this language is not available")
+
+        else:
+            if word == "":
+                st.warning("Please enter your English word")
+
+            else:
+                translation = languages[language].get(word)
+
+                if translation:
+                    st.success(f" Translation {language.title()}: {translation}")
+
+                else:
+                    st.error(f" Sorry, we do not have the {language} translation of this word")
+
+if __name__ == "__main__":
+    main()
+
 
 
 
