@@ -1,3 +1,5 @@
+import streamlit as st
+
 languages = {
     "igbo" : {  #by Chiemelie Daniel Nwosu
     'morning': 'ụtụtụ',
@@ -140,6 +142,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
 
